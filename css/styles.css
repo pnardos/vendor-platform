@@ -257,43 +257,44 @@ body {
   line-height: 1.5;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #FBFBF8; }
 
-/* line 20, ../components/sass/base/_base.scss */
+/* line 21, ../components/sass/base/_base.scss */
 .wrap {
   width: 70rem;
   padding: 0.625rem;
   margin: 0 auto; }
 
-/* line 26, ../components/sass/base/_base.scss */
+/* line 27, ../components/sass/base/_base.scss */
 header {
   margin: 0; }
 
-/* line 47, ../components/sass/base/_base.scss */
+/* line 48, ../components/sass/base/_base.scss */
 aside {
   float: left;
   display: inline-block; }
 
-/* line 53, ../components/sass/base/_base.scss */
+/* line 54, ../components/sass/base/_base.scss */
 a {
   color: dimgray;
   text-decoration: none;
-  font-weight: 400; }
+  font-weight: 100; }
 
-/* line 60, ../components/sass/base/_base.scss */
+/* line 61, ../components/sass/base/_base.scss */
 img {
   margin-bottom: 0.625rem;
   max-width: 100%;
   height: auto; }
 
-/* line 67, ../components/sass/base/_base.scss */
+/* line 68, ../components/sass/base/_base.scss */
 ul,
 li {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-/* line 75, ../components/sass/base/_base.scss */
+/* line 76, ../components/sass/base/_base.scss */
 p {
   font-family: Lato-Regular;
   font-size: 1rem;
@@ -302,7 +303,7 @@ p {
   line-height: 1.1875;
   margin: 0 0 1.5625rem 0; }
 
-/* line 84, ../components/sass/base/_base.scss */
+/* line 85, ../components/sass/base/_base.scss */
 blockquote {
   font-size: 1.5rem;
   font-style: italic;
@@ -311,22 +312,22 @@ blockquote {
   padding: 0 0 0 5%;
   border-left: solid 0.33333rem dimgray; }
 
-/* line 93, ../components/sass/base/_base.scss */
+/* line 94, ../components/sass/base/_base.scss */
 footer {
   margin-top: 2rem; }
 
 /* line 34, ../components/sass/layout/_extends.scss */
 h1, .headline-primary--grouped, .headline-primary {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
   font-size: 4rem;
   color: #4A4A4A;
   line-height: 1.21053; }
 
 /* line 42, ../components/sass/layout/_extends.scss */
 h2, .headline-secondary--grouped, .headline-secondary--grouped--bold, .headline-secondary {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   letter-spacing: 0.4px;
   font-size: 1.5rem;
   color: #4A4A4A;
@@ -335,7 +336,7 @@ h2, .headline-secondary--grouped, .headline-secondary--grouped--bold, .headline-
 
 /* line 52, ../components/sass/layout/_extends.scss */
 h3, .headline-tertiary--grouped, .headline-tertiary {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
   color: #6F6F6F;
@@ -344,7 +345,7 @@ h3, .headline-tertiary--grouped, .headline-tertiary {
 
 /* line 61, ../components/sass/layout/_extends.scss */
 h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.375rem;
   color: #4A4A4A;
@@ -354,7 +355,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 /* line 70, ../components/sass/layout/_extends.scss */
 .headline-checkout {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   text-transform: uppercase;
   font-size: 0.8125rem;
   color: #6F6F6F;
@@ -465,17 +466,17 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   padding: 0; }
 
 /* line 4, ../components/sass/layout/_layout.scss */
-.splash-bg {
-  background: #501E70;
+.screen-bg {
+  background: #FBFBF8;
   height: 100%;
   margin: 0;
   padding: 0;
   position: relative;
   overflow: hidden; }
   /* line 12, ../components/sass/layout/_layout.scss */
-  .splash-bg p {
+  .screen-bg p {
     color: #fff;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     font-weight: 300;
     text-align: center;
@@ -483,7 +484,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
     line-height: 1.1875rem; }
 
 /* line 23, ../components/sass/layout/_layout.scss */
-.splash-logo {
+.screen-logo {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
@@ -548,14 +549,14 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 
 /* line 93, ../components/sass/layout/_layout.scss */
 .headline-login, .back-headline {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.375rem;
   font-weight: 300;
   text-align: center;
   margin-bottom: 1.5rem;
-  letter-spacing: 0.0375rem;
-  line-height: 1.8125rem;
-  color: #fff; }
+  letter-spacing: 0.03125rem;
+  line-height: 1.875rem;
+  color: #8E8E8E; }
 
 /* line 104, ../components/sass/layout/_layout.scss */
 .back-headline {
@@ -644,7 +645,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 
 /* line 201, ../components/sass/layout/_layout.scss */
 .visitor-headline {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
   font-weight: 300;
   color: #575757;
@@ -660,8 +661,8 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 
 /* line 218, ../components/sass/layout/_layout.scss */
 .app-bar-headline {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   font-size: 1.125rem;
   color: #fff;
   letter-spacing: 0.05rem;
@@ -739,7 +740,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 /* line 304, ../components/sass/layout/_layout.scss */
 .appointment-title__list, .appointment-details__list {
   display: inline-block;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1rem;
   color: #575757;
@@ -781,7 +782,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 
 /* line 351, ../components/sass/layout/_layout.scss */
 .unit-name span {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 0.875rem;
   color: #AB3A8E;
@@ -811,7 +812,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   width: 100%;
   text-transform: uppercase;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 0.6px;
   transition: opacity 0.3s;
   display: block;
@@ -878,7 +879,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
       .headline-secondary--grouped--bold span {
         font-size: 0.875rem;
         display: block;
-        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 300;
         margin-top: 0.5rem; }
 /* line 44, ../components/sass/modules/_headlines.scss */
@@ -1002,29 +1003,29 @@ input[type=radio]:not(old):checked + label > span > span {
 
 /* line 113, ../components/sass/modules/_form.scss */
 input[type=text], input[type=password], input[type=number] {
-  margin-bottom: 2.25rem;
+  margin-bottom: 0;
   width: 100%;
   background: transparent;
   border-top: none;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #8E8E8E;
   outline: 0;
   padding: 0 0 0.5rem 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  color: #fff;
+  color: #575757;
   letter-spacing: 0.025rem; }
 
 /* line 133, ../components/sass/modules/_form.scss */
 input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
-  border-bottom: 1px solid #AB3A8E; }
+  border-bottom: 1px solid #30CA00; }
 
 /* line 138, ../components/sass/modules/_form.scss */
 ::-webkit-input-placeholder {
   color: #E5E5E5;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
   height: 1.5rem;
@@ -1034,7 +1035,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 :-moz-placeholder {
   /* Firefox 18- */
   color: #E5E5E5;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
   height: 1.5rem;
@@ -1044,7 +1045,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #E5E5E5;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
   height: 1.5rem;
@@ -1053,7 +1054,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 /* line 165, ../components/sass/modules/_form.scss */
 :-ms-input-placeholder {
   color: #E5E5E5;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
   height: 1.5rem;
@@ -1091,8 +1092,8 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   padding: 4px 0 9px 0;
   margin: 0 0;
   width: 100%;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   font-size: 1rem;
   color: #6F6F6F;
   border: none;
@@ -1108,12 +1109,12 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   outline: none; }
 
 /* line 228, ../components/sass/modules/_form.scss */
-.login-label {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.labels {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 1rem;
-  color: #fff;
-  letter-spacing: 0.0375rem;
+  font-size: 0.875rem;
+  color: #575757;
+  letter-spacing: 0.025rem;
   line-height: 1.1875rem;
   padding-bottom: 0.75rem;
   display: block; }
@@ -1127,12 +1128,12 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 
 /* line 10, ../components/sass/modules/_buttons.scss */
 .btn-login {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1.75rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 2.125rem;
   text-transform: capitalize;
-  color: #AB3A8E;
-  background: #fff;
+  color: #fff;
+  background: #30CA00;
   letter-spacing: 0.06563rem;
   line-height: 2.125rem;
   margin: 0 auto 3rem auto;
@@ -1142,8 +1143,8 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 
 /* line 27, ../components/sass/modules/_buttons.scss */
 .btn-search {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   font-size: 1.75rem;
   text-transform: capitalize;
   color: #AB3A8E;
@@ -1160,7 +1161,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 .btn-check {
   color: #fff;
   background: #AB3A8E;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.25rem;
   text-transform: capitalize;
@@ -1218,18 +1219,22 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   margin: 2%; }
 
 /* line 104, ../components/sass/modules/_buttons.scss */
-.offset-52 {
-  margin-right: 6%; }
+.offset-bottom-26 {
+  margin-bottom: 1.625rem; }
 
 /* line 108, ../components/sass/modules/_buttons.scss */
+.offset-bottom-46 {
+  margin-bottom: 2.875rem; }
+
+/* line 112, ../components/sass/modules/_buttons.scss */
 .offset-left-10 {
   margin-left: 10%; }
 
-/* line 112, ../components/sass/modules/_buttons.scss */
+/* line 116, ../components/sass/modules/_buttons.scss */
 .offset-margin-bottom-0 {
   margin: 0; }
 
-/* line 116, ../components/sass/modules/_buttons.scss */
+/* line 120, ../components/sass/modules/_buttons.scss */
 .offset-top-app-bar {
   margin-top: 1.125rem; }
 
@@ -1447,8 +1452,8 @@ html {
     -webkit-overflow-scrolling: touch; }
     /* line 111, ../components/sass/modules/_modal-core.scss */
     .modal--fade .modal-content p, .modal--show .modal-content p {
-      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: 400;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 100;
       color: #6F6F6F;
       font-size: 1rem;
       text-align: center;

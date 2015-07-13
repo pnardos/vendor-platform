@@ -111,14 +111,14 @@ input[type=radio]:not(old):checked + label > span > span{
 }
 
 input[type=text], input[type=password], input[type=number] {
-  margin-bottom: rem(36px);
+  margin-bottom: 0;
   width: 100%;
   background: transparent;
   border:{
    top: none;
    left: 0;
     right: 0;
-    bottom: 1px solid $white;
+    bottom: 1px solid $centuria-gray;
   }
   
   outline: 0;
@@ -126,12 +126,12 @@ input[type=text], input[type=password], input[type=number] {
   font-family: $font-family--primary;
   font-weight: $font-weight--light;
   font-size: rem(24px);
-  color: $white;
+  color: $centuria-text;
   letter-spacing: rem(0.4px);
 }
 
 input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
-  border-bottom: 1px solid $centuria;
+  border-bottom: 1px solid $platform-green;
 }
 
 // Placeholder text
@@ -225,12 +225,12 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
     outline: none;
 }
 
-.login-label {
+.labels {
   font-family: $font-family--primary;
   font-weight: $font-weight--light;
-  font-size: rem(16px);
-  color: $white;
-  letter-spacing: rem(0.6px);
+  font-size: rem(14px);
+  color: $centuria-text;
+  letter-spacing: rem(0.4px);
   line-height: rem(19px);
   padding-bottom: rem(12px);
   display: block;

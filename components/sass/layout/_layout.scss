@@ -1,8 +1,8 @@
 // ==========================================================================
 // Page layouts
 // ==========================================================================
-.splash-bg {
-  background: $centuria-haze;
+.screen-bg {
+  background: $screen-bg;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@
   }
 }
 
-.splash-logo {
+.screen-logo {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -92,13 +92,13 @@
 
 .headline-login {
   font-family: $font-family--primary;
-  font-size: rem(24px);
+  font-size: rem(22px);
   font-weight: $font-weight--light;
   text-align: center;
   margin-bottom: rem(24px);
-  letter-spacing: rem(0.6px);
-  line-height: rem(29px);
-  color: $white;
+  letter-spacing: rem(0.5px);
+  line-height: rem(30px);
+  color: $centuria-gray;
 }
 
 .back-headline {

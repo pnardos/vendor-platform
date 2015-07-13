@@ -1,10 +1,11 @@
 // Font Weights
 
-$font-weight--thin       : 100;
+$font-weight--medium     : 100;
 $font-weight--light      : 300;
-$font-weight--medium     : 400;
+$font-weight--normal     : 400;
+$font-weight--semi--bold : 600;
 $font-weight--bold       : 700;
-$font-weight--ultra-bold : 900;
+$font-weight--ultra-bold : 800;
 
 // Descriptive Base Colors
 
@@ -50,6 +51,11 @@ $orange         : #E45635;
 $purple-blue    : #4B538B;
 $border         : #777777;
 $placeholder    : #E5E5E5;
+
+// Mobile UI Vendor POS
+$screen-bg      : #FBFBF8;
+$platform-green : #30CA00;
+
 
 // Color Usage
 
