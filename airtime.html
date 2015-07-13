@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+	<title>Platform Vendor POS</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+</head>
+
+<body>
+   <section class="app-bar">
+   	<div class="grid menu">
+   		<a href="main-menu.html"><img src="images/back-button.png" alt=""></a>
+   		<h4 class="app-bar-headline">Airtime</h4>
+   	</div>
+   </section>
+    <section class="app-container">
+      <div class="grid grid__col--4">
+      <div class="grid__col--6 grid offset-top-36">
+       <div class="grid__col--5 no-padding select-style offset-bottom-26">
+          <label for="username" class="labels">Carrier</label>
+          <select name="idtype" id="select">
+            <option value="1">Safaricom</option>
+            <option value="2">Airtel</option>
+            <option value="3">Orange</option>
+          </select>
+        </div>
+        <div class="grid__col--5 no-padding select-style offset-bottom-26">
+          <label for="username" class="labels">Denomination</label>
+          <select name="idtype" id="select">
+            <option value="1">KES 50</option>
+            <option value="2">KES 100</option>
+            <option value="3">KES 250</option>
+            <option value="3">KES 500</option>
+            <option value="3">KES 1000</option>
+          </select>
+        </div>
+        <div class="grid__col--12 no-padding offset-bottom-26">
+          <label for="username" class="labels">Phone Number</label>
+          <input type="number">
+        </div>
+        <div class="grid__col--12 no-padding">
+          <label for="password" class="labels">Amount</label>
+          <input type="number">
+        </div>
+      </div>
+      <div>
+        <div class="grid__col--12"> 
+         <button class="btn-print">Print</button>
+        </div>
+      </div>
+      </div>
+    </section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+
+</html>

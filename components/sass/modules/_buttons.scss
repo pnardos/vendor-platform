@@ -23,6 +23,61 @@
     overflow: hidden;  
 }
 
+.btn-print {
+    @extend %btn;
+    font-family: $font-family--primary;
+    font-weight: $font-weight--normal;
+    font-size: rem(24px);
+    text-transform: capitalize;
+    color: $platform-cta;
+    border: 1px solid $platform-cta;
+    background: $white;
+    letter-spacing: rem(0.36px);
+    line-height: rem(34px);
+    margin: 0 auto rem(48px) auto;
+    padding: rem(12px) rem(24px);
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.btn-save {
+    @extend %btn;
+    font-family: $font-family--primary;
+    font-weight: $font-weight--normal;
+    font-size: rem(24px);
+    text-transform: capitalize;
+    color: $platform-cta;
+    border: 1px solid $platform-cta;
+    background: $white;
+    letter-spacing: rem(0.36px);
+    line-height: rem(24px);
+    margin: 0 auto rem(48px) auto;
+    padding: rem(12px) rem(24px);
+    display: inline-block;
+    overflow: hidden;
+    width: 40%; 
+}
+
+.btn-cancel {
+    @extend %btn;
+    font-family: $font-family--primary;
+    font-weight: $font-weight--normal;
+    font-size: rem(24px);
+    text-transform: capitalize;
+    color: $border-btn;
+    border: 1px solid $border-btn;
+    background: $white;
+    letter-spacing: rem(0.36px);
+    line-height: rem(24px);
+    margin: 0 auto rem(48px) auto;
+    padding: rem(12px) rem(24px);
+    display: inline-block;
+    overflow: hidden;
+    width: 40%; 
+}
+
+
 
 .btn-search {
   @extend %btn;
@@ -107,6 +162,18 @@
 
 .offset-bottom-46 {
   margin-bottom: rem(46px);
+}
+
+.offset-bottom-24 {
+  margin-bottom: rem(24px);
+}
+
+.offset-top-36 {
+  margin-top: rem(36px);
+}
+
+.offset-top-130 {
+  margin-top: rem(130px);
 }
 
 .offset-left-10 {
