@@ -1,0 +1,237 @@
+// ==========================================================================
+// Form
+// ==========================================================================
+
+.form {
+  @include e(label) {
+    @include m(hidden) {
+     @extend .srt;
+    }
+    
+    @include m(capitalise) {
+     text-transform: uppercase;
+     margin-left: 0;
+     margin-bottom: rem(20px);  
+     display: block;
+     font-size: rem(13px);
+     color: $text-color;
+     letter-spacing: 0.2px;  
+    }
+    display: block;  
+    margin: rem(10px);
+  }
+  
+  @include e(input) {
+    width: 100%;  
+    font-size: rem(16px);
+    padding: rem(12px, 18px) 0 rem(12px, 18px) rem(8px);
+    margin-bottom: rem(20px, 18px);
+    border: 1px solid $border-gray;
+    border-radius: $br--default;
+    background-repeat: $white;
+    color: palette(gray, x-dark);
+    font-weight: $font-weight--light;
+    
+    @include mq(large) {
+      margin-bottom: 7px;
+    }
+    
+    &:focus {
+      border-color: $color-primary;
+      outline: none;  
+    }
+  }
+  
+  @include e(btn) {
+    @extend %btn;
+    background: $color-primary;
+  }
+}
+
+// Search
+
+.search-wrap {
+  position: relative;
+  padding-top: 0;
+}
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : rem(22px);
+  height    : rem(20px);
+  margin    : rem(4px) rem(25px) 0 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 1;
+  float: left;
+}
+
+input[type=checkbox]:not(old) + label > span,
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : rem(150px);
+  height           : rem(150px);
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 1px solid $centuria-gray;
+  border-radius    : $br--round;
+  background       : $white;
+  vertical-align   : bottom;
+}
+
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span{
+  background: $white;
+}
+
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 1em;
+  color       : rgb(153,204,102);
+  font-size   : 0.875em;
+  line-height : 1em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(115,153,77);
+  font-weight : bold;
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : rem(9px);
+  height           : rem(9px);
+  margin           : 0.125em;
+  border           : 0;
+  border-radius    : $br--round;
+  background       : $emerald;
+  background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
+}
+
+input[type=text], input[type=password], input[type=number] {
+  margin-bottom: rem(36px);
+  width: 100%;
+  background: transparent;
+  border:{
+   top: none;
+   left: 0;
+    right: 0;
+    bottom: 1px solid $white;
+  }
+  
+  outline: 0;
+  padding: 0 0 rem(8px) 0;
+  font-family: $font-family--primary;
+  font-weight: $font-weight--light;
+  font-size: rem(24px);
+  color: $white;
+  letter-spacing: rem(0.4px);
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
+  border-bottom: 1px solid $centuria;
+}
+
+// Placeholder text
+::-webkit-input-placeholder {
+    color: $placeholder;
+    font-family: $font-family--primary;
+    font-weight: $font-weight--light;
+    font-size: rem(24px);
+    height: rem(24px);
+    letter-spacing: rem(0.4px);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: $placeholder;  
+    font-family: $font-family--primary;
+    font-weight: $font-weight--light;
+    font-size: rem(24px);
+    height: rem(24px);
+    letter-spacing: rem(0.4px);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: $placeholder;
+    font-family: $font-family--primary;
+    font-weight: $font-weight--light;
+    font-size: rem(24px);
+    height: rem(24px);
+    letter-spacing: rem(0.4px);
+}
+
+:-ms-input-placeholder {  
+    color: $placeholder; 
+    font-family: $font-family--primary;
+    font-weight: $font-weight--light;
+    font-size: rem(24px);
+    height: rem(24px);
+    letter-spacing: rem(0.4px);
+}
+
+// Select
+
+.select-style {
+    padding: 0;
+    margin: 0;
+    border:{
+     top: none;
+     left: 0;
+     right: 0;
+     bottom: 1px solid $centuria-gray;
+    }
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: transparent;
+    background: transparent;
+    position: relative;
+    display: block;
+    
+}
+
+.select-style:after {
+    top: 50%;
+    right: 3%;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    margin-top: -2px;
+    z-index: 100;
+}
+
+.select-style select {
+    padding: 4px 0 9px 0;
+    margin: 0 0;
+    width: 100%;
+    font-family: $font-family--primary;
+    font-weight: $font-weight--medium;
+    font-size: rem(16px);
+    color: $text-color;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    background: transparent url(../images/select-arrow.png) 
+      no-repeat 95% 50%;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.login-label {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--light;
+  font-size: rem(16px);
+  color: $white;
+  letter-spacing: rem(0.6px);
+  line-height: rem(19px);
+  padding-bottom: rem(12px);
+  display: block;
+}
