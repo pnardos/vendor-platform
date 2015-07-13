@@ -1,0 +1,375 @@
+// ==========================================================================
+// Page layouts
+// ==========================================================================
+.splash-bg {
+  background: $centuria-haze;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  
+  p {
+    color: $white;
+    font-family: $font-family--primary;
+    font-size: rem(16px);
+    font-weight: $font-weight--light;
+    text-align: center;
+    letter-spacing: rem(0.4px);
+    line-height: rem(19px);
+  }
+}
+
+.splash-logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#manage-dropdown{
+  max-height: 0;            
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+#manage-stuff:hover div#manage-dropdown{max-height: 240px ;}
+
+.active {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid $orange;
+  padding: rem(15px) 0 rem(15px) rem(20px);
+  width: 100%;
+  
+  a {
+    color: $white;
+    margin: 0;
+    
+  }
+}
+
+
+.user--nav {
+  margin: rem(38px) 0 0 0;
+  padding: 0;
+}
+
+.user--nav__item {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  
+  a {
+    color: $purple-blue;
+  }
+  
+  &:first-child {
+    margin-right: rem(20px);
+  }
+}
+
+
+// Login styles
+.logo-login {
+  margin-top: rem(48px);
+  
+  
+  img {
+    display: block;
+    width: auto;
+    margin: 0 auto rem(24px) auto;
+  }
+}
+
+.headline-login {
+  font-family: $font-family--primary;
+  font-size: rem(24px);
+  font-weight: $font-weight--light;
+  text-align: center;
+  margin-bottom: rem(24px);
+  letter-spacing: rem(0.6px);
+  line-height: rem(29px);
+  color: $white;
+}
+
+.back-headline {
+  @extend .headline-login;
+  font-size: rem(16px);
+  display: inline-block;
+  margin-left: rem(26px);
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.back {
+  margin-top: rem(48px);
+  padding-left: rem(24px);
+  display: block;
+  
+  a {
+    display: inline-block;
+    
+    img {
+      display: inline-block;
+      width: auto;
+      margin: rem(7px) 0 0 0;
+      float: left;
+    }
+  }
+}
+
+.lost-password {
+  width: auto;
+  text-align: center;
+  
+  a {
+    font-family: Lato-Regular;
+    font-size: $base__font-size;
+    color: $white;
+    letter-spacing: rem(0.4px);
+    line-height: rem(19px);
+    text-align: center;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.right {
+ float: right;
+}
+
+
+/* Visit screen */
+.app-bar {
+  background: $centuria-haze;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  padding-top: rem(20px);
+  padding-left: rem(24px);
+  height: rem(64px);
+   -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+}
+
+.menu {
+  a {
+    display: inline-block;
+    img {
+      display: inline-block;
+      width: auto;
+      margin: rem(7px) 0 0 0;
+      float: left;
+    }
+  }
+}
+
+.app-container {
+  background: $app-bg;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}
+
+
+/* Visits */
+.visits {
+  input[type=text], input[type=number] {
+    border-bottom: 1px solid $centuria-gray;
+    color: $centuria-text;
+  }
+  
+  label {
+    color: $centuria-text;
+  }
+}
+
+.visitor-headline {
+  font-family: $font-family--primary;
+  font-size: rem(20px);
+  font-weight: $font-weight--light;
+  color: $centuria-text;
+  letter-spacing: rem(0.6px);
+  line-height: rem(22px);
+  display: block;
+  margin-top: rem(26px);
+  margin-bottom: rem(18px);
+  margin-left: 0;
+  
+  &.headline-sm {
+    font-size: rem(18px);
+  }
+}
+
+.app-bar-headline {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--medium;
+  font-size: rem(18px);
+  color: $white;
+  letter-spacing: rem(0.8px);
+  line-height: rem(22px);
+  display: inline-block;
+  margin-left: rem(24px);
+}
+
+.profile {
+  a {
+    img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+    }
+    
+    p {
+      text-align: center;
+      font-size: rem(14px);
+      letter-spacing: rem(0.4px);
+      color: $centuria-text;
+      margin-top: rem(12px);
+    }
+  }
+}
+
+.unit-link {
+  float: right;
+  display: block;
+  margin-top: rem(26px);
+  a {
+    float: right;
+    color: $purple-light;
+    img {
+      margin: rem(5px) 0 0 rem(12px);
+      display: block;
+      float: right;
+    }
+  }
+}
+
+.appt-text {
+  p {
+    font-family: Lato-LightItalic;
+    font-size: rem(18px);
+    color: $centuria;
+    letter-spacing: rem(0.54px);
+    line-height: rem(22px); 
+    text-align: center;
+  }
+}
+
+.btm-sep {
+  border-bottom: 1px solid $centuria;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  float: none !important;
+}
+
+.left {
+  float: left !important;
+}
+
+/* Appointments */
+.appointment-table {
+  display: block;
+  overflow: hidden;
+  border-radius: $br--default;
+  border: 1px solid $sentinel-gray;
+  background: $white;
+  margin-top: rem(12px);
+}
+
+
+.appointment-title {
+  display: block;
+  overflow: hidden;
+  margin-top: rem(18px);
+  margin-left: percentage(15 / 100);
+}
+
+.appointment-title__list {
+  display: inline-block;
+  font-family: $font-family--primary;
+  font-weight: $font-weight--light;
+  font-size: rem(16px);
+  color: $centuria-text;
+  line-height: rem(19px);
+  width: 43%;
+}
+
+.appointment-details {
+  @extend .appointment-title;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: rem(50px);
+  border-bottom: 1px solid $sentinel-gray;
+  
+  a {
+    display: block;
+    overflow: hidden;
+  }
+}
+
+.appointment-details__list {
+  @extend .appointment-title__list;
+  font-size: rem(18px);
+  letter-spacing: rem(0.4px);
+  line-height: rem(22px);
+  margin-top: rem(24px);
+  margin-bottom: rem(24px);
+  margin-right: percentage(9 / 100);
+  float: left;
+  width: 40%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.no-margin-right {
+  margin-right: 0;
+}
+
+.auto-width {
+  width: auto;
+}
+
+.unit-name {
+  span {
+    font-family: $font-family--primary;
+    font-weight: $font-weight--light;
+    font-size: rem(14px);
+    color: $centuria;
+    letter-spacing: rem(0.6px);
+    line-height: rem(19px);
+    margin-top: rem(18px);
+    padding-bottom: rem(4px);
+    display: block;
+  }
+  
+  h2 {
+    color: $centuria;
+    font-size: rem(18px);
+  }
+  
+  &.left {
+    float: left;
+  }
+}
+
+.no-margin {
+  margin: 0;
+}
