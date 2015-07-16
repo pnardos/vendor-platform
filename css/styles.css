@@ -251,6 +251,10 @@ th {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* line 10, ../components/sass/base/_base.scss */
+html, body {
+  height: 100%; }
+
 /* line 12, ../components/sass/base/_base.scss */
 body {
   font-size: 16px;
@@ -498,56 +502,43 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   display: block; }
 
 /* line 37, ../components/sass/layout/_layout.scss */
-#manage-dropdown {
-  max-height: 0;
-  overflow-y: hidden;
-  -webkit-transition: max-height 0.5s ease-in-out;
-  -moz-transition: max-height 0.5s ease-in-out;
-  -o-transition: max-height 0.5s ease-in-out;
-  transition: max-height 0.5s ease-in-out; }
-
-/* line 45, ../components/sass/layout/_layout.scss */
-#manage-stuff:hover div#manage-dropdown {
-  max-height: 240px; }
-
-/* line 47, ../components/sass/layout/_layout.scss */
 .active {
   background: rgba(255, 255, 255, 0.1);
   border-left: 3px solid #E45635;
   padding: 0.9375rem 0 0.9375rem 1.25rem;
   width: 100%; }
-  /* line 53, ../components/sass/layout/_layout.scss */
+  /* line 43, ../components/sass/layout/_layout.scss */
   .active a {
     color: #fff;
     margin: 0; }
 
-/* line 61, ../components/sass/layout/_layout.scss */
+/* line 50, ../components/sass/layout/_layout.scss */
 .user--nav {
   margin: 2.375rem 0 0 0;
   padding: 0; }
 
-/* line 66, ../components/sass/layout/_layout.scss */
+/* line 55, ../components/sass/layout/_layout.scss */
 .user--nav__item {
   display: inline;
   margin: 0;
   padding: 0; }
-  /* line 71, ../components/sass/layout/_layout.scss */
+  /* line 60, ../components/sass/layout/_layout.scss */
   .user--nav__item a {
     color: #4B538B; }
-  /* line 75, ../components/sass/layout/_layout.scss */
+  /* line 64, ../components/sass/layout/_layout.scss */
   .user--nav__item:first-child {
     margin-right: 1.25rem; }
 
-/* line 82, ../components/sass/layout/_layout.scss */
+/* line 71, ../components/sass/layout/_layout.scss */
 .logo-login {
-  margin-top: 3rem; }
-  /* line 86, ../components/sass/layout/_layout.scss */
+  margin-top: 1.25rem; }
+  /* line 75, ../components/sass/layout/_layout.scss */
   .logo-login img {
     display: block;
     width: auto;
-    margin: 0 auto 1.5rem auto; }
+    margin: 0 auto 1.125rem auto; }
 
-/* line 93, ../components/sass/layout/_layout.scss */
+/* line 82, ../components/sass/layout/_layout.scss */
 .headline-login, .back-headline {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.375rem;
@@ -558,7 +549,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   line-height: 1.875rem;
   color: #8E8E8E; }
 
-/* line 104, ../components/sass/layout/_layout.scss */
+/* line 93, ../components/sass/layout/_layout.scss */
 .back-headline {
   font-size: 1rem;
   display: inline-block;
@@ -566,26 +557,26 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   margin-bottom: 0;
   padding: 0; }
 
-/* line 113, ../components/sass/layout/_layout.scss */
+/* line 102, ../components/sass/layout/_layout.scss */
 .back {
   margin-top: 3rem;
   padding-left: 1.5rem;
   display: block; }
-  /* line 118, ../components/sass/layout/_layout.scss */
+  /* line 107, ../components/sass/layout/_layout.scss */
   .back a {
     display: inline-block; }
-    /* line 121, ../components/sass/layout/_layout.scss */
+    /* line 110, ../components/sass/layout/_layout.scss */
     .back a img {
       display: inline-block;
       width: auto;
       margin: 0.4375rem 0 0 0;
       float: left; }
 
-/* line 130, ../components/sass/layout/_layout.scss */
+/* line 119, ../components/sass/layout/_layout.scss */
 .lost-password {
   width: auto;
   text-align: center; }
-  /* line 134, ../components/sass/layout/_layout.scss */
+  /* line 123, ../components/sass/layout/_layout.scss */
   .lost-password a {
     font-family: Lato-Regular;
     font-size: 16px;
@@ -593,16 +584,16 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
     letter-spacing: 0.025rem;
     line-height: 1.1875rem;
     text-align: center; }
-    /* line 142, ../components/sass/layout/_layout.scss */
+    /* line 131, ../components/sass/layout/_layout.scss */
     .lost-password a:hover {
       opacity: 0.8; }
 
-/* line 148, ../components/sass/layout/_layout.scss */
+/* line 137, ../components/sass/layout/_layout.scss */
 .right {
   float: right; }
 
 /* Visit screen */
-/* line 154, ../components/sass/layout/_layout.scss */
+/* line 142, ../components/sass/layout/_layout.scss */
 .app-bar {
   background: #11C772;
   position: relative;
@@ -617,42 +608,42 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24); }
 
-/* line 170, ../components/sass/layout/_layout.scss */
+/* line 158, ../components/sass/layout/_layout.scss */
 .menu a {
   display: inline-block;
   float: left; }
-  /* line 173, ../components/sass/layout/_layout.scss */
+  /* line 161, ../components/sass/layout/_layout.scss */
   .menu a img {
     display: inline-block;
     width: auto;
     margin: 0.4375rem 0 0 0;
     float: left; }
 
-/* line 182, ../components/sass/layout/_layout.scss */
+/* line 171, ../components/sass/layout/_layout.scss */
 .app-container {
   display: block;
   overflow: hidden;
   height: 100%;
-  padding: 0 0 1.875rem 0;
+  padding: 0;
   background-image: url("../images/app-bg.png");
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0px 9.75rem; }
 
 /* Visits */
-/* line 196, ../components/sass/layout/_layout.scss */
+/* line 185, ../components/sass/layout/_layout.scss */
 .visits input[type=text], .visits input[type=number] {
   border-bottom: 1px solid #8E8E8E;
   color: #575757; }
-/* line 201, ../components/sass/layout/_layout.scss */
+/* line 190, ../components/sass/layout/_layout.scss */
 .visits label {
   color: #575757; }
 
-/* line 206, ../components/sass/layout/_layout.scss */
+/* line 195, ../components/sass/layout/_layout.scss */
 .visitor-headline {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
@@ -664,11 +655,11 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   margin-top: 1.625rem;
   margin-bottom: 1.125rem;
   margin-left: 0; }
-  /* line 218, ../components/sass/layout/_layout.scss */
+  /* line 207, ../components/sass/layout/_layout.scss */
   .visitor-headline.headline-sm {
     font-size: 1.125rem; }
 
-/* line 223, ../components/sass/layout/_layout.scss */
+/* line 212, ../components/sass/layout/_layout.scss */
 .app-bar-headline {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -680,15 +671,15 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   margin-top: 0.25rem; }
 
 /* Card */
-/* line 236, ../components/sass/layout/_layout.scss */
+/* line 225, ../components/sass/layout/_layout.scss */
 .card-button {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
   border-radius: 2px;
-  width: 9.375rem;
-  height: 7.5rem;
+  width: 7.5rem;
+  height: 6.875rem;
   display: inline-block; }
-  /* line 244, ../components/sass/layout/_layout.scss */
+  /* line 233, ../components/sass/layout/_layout.scss */
   .card-button a {
     display: block;
     margin: 0;
@@ -699,18 +690,18 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
     letter-spacing: 0.025rem;
     line-height: 1.375rem;
     text-align: center; }
-    /* line 255, ../components/sass/layout/_layout.scss */
+    /* line 244, ../components/sass/layout/_layout.scss */
     .card-button a img {
       display: block;
       width: auto;
       margin: 0 auto 1.125rem auto; }
 
-/* line 270, ../components/sass/layout/_layout.scss */
+/* line 259, ../components/sass/layout/_layout.scss */
 .profile a img {
   display: block;
   margin: 0 auto;
   width: auto; }
-/* line 276, ../components/sass/layout/_layout.scss */
+/* line 265, ../components/sass/layout/_layout.scss */
 .profile a p {
   text-align: center;
   font-size: 0.875rem;
@@ -718,22 +709,22 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   color: #575757;
   margin-top: 0.75rem; }
 
-/* line 286, ../components/sass/layout/_layout.scss */
+/* line 275, ../components/sass/layout/_layout.scss */
 .unit-link {
   float: right;
   display: block;
   margin-top: 1.625rem; }
-  /* line 290, ../components/sass/layout/_layout.scss */
+  /* line 279, ../components/sass/layout/_layout.scss */
   .unit-link a {
     float: right;
     color: #E380CA; }
-    /* line 293, ../components/sass/layout/_layout.scss */
+    /* line 282, ../components/sass/layout/_layout.scss */
     .unit-link a img {
       margin: 0.3125rem 0 0 0.75rem;
       display: block;
       float: right; }
 
-/* line 302, ../components/sass/layout/_layout.scss */
+/* line 291, ../components/sass/layout/_layout.scss */
 .appt-text p {
   font-family: Lato-LightItalic;
   font-size: 1.125rem;
@@ -742,7 +733,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   line-height: 1.375rem;
   text-align: center; }
 
-/* line 312, ../components/sass/layout/_layout.scss */
+/* line 301, ../components/sass/layout/_layout.scss */
 .btm-sep {
   border-bottom: 1px solid #AB3A8E;
   height: 1px;
@@ -751,12 +742,12 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   width: 20%;
   float: none !important; }
 
-/* line 321, ../components/sass/layout/_layout.scss */
+/* line 310, ../components/sass/layout/_layout.scss */
 .left {
   float: left !important; }
 
 /* Appointments */
-/* line 326, ../components/sass/layout/_layout.scss */
+/* line 315, ../components/sass/layout/_layout.scss */
 .appointment-table {
   display: block;
   overflow: hidden;
@@ -765,14 +756,14 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   background: #fff;
   margin-top: 0.75rem; }
 
-/* line 336, ../components/sass/layout/_layout.scss */
+/* line 325, ../components/sass/layout/_layout.scss */
 .appointment-title, .appointment-details {
   display: block;
   overflow: hidden;
   margin-top: 1.125rem;
   margin-left: 15%; }
 
-/* line 343, ../components/sass/layout/_layout.scss */
+/* line 332, ../components/sass/layout/_layout.scss */
 .appointment-title__list, .appointment-details__list {
   display: inline-block;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -782,18 +773,18 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   line-height: 1.1875rem;
   width: 43%; }
 
-/* line 353, ../components/sass/layout/_layout.scss */
+/* line 342, ../components/sass/layout/_layout.scss */
 .appointment-details {
   margin-top: 0;
   margin-left: 0;
   padding-left: 3.125rem;
   border-bottom: 1px solid #E5E5E5; }
-  /* line 360, ../components/sass/layout/_layout.scss */
+  /* line 349, ../components/sass/layout/_layout.scss */
   .appointment-details a {
     display: block;
     overflow: hidden; }
 
-/* line 366, ../components/sass/layout/_layout.scss */
+/* line 355, ../components/sass/layout/_layout.scss */
 .appointment-details__list {
   font-size: 1.125rem;
   letter-spacing: 0.025rem;
@@ -807,15 +798,15 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   text-overflow: ellipsis;
   overflow: hidden; }
 
-/* line 381, ../components/sass/layout/_layout.scss */
+/* line 370, ../components/sass/layout/_layout.scss */
 .no-margin-right {
   margin-right: 0; }
 
-/* line 385, ../components/sass/layout/_layout.scss */
+/* line 374, ../components/sass/layout/_layout.scss */
 .auto-width {
   width: auto; }
 
-/* line 390, ../components/sass/layout/_layout.scss */
+/* line 379, ../components/sass/layout/_layout.scss */
 .unit-name span {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -826,37 +817,37 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   margin-top: 1.125rem;
   padding-bottom: 0.25rem;
   display: block; }
-/* line 402, ../components/sass/layout/_layout.scss */
+/* line 391, ../components/sass/layout/_layout.scss */
 .unit-name h2 {
   color: #AB3A8E;
   font-size: 1.125rem; }
-/* line 407, ../components/sass/layout/_layout.scss */
+/* line 396, ../components/sass/layout/_layout.scss */
 .unit-name.left {
   float: left; }
 
-/* line 412, ../components/sass/layout/_layout.scss */
+/* line 401, ../components/sass/layout/_layout.scss */
 .no-margin {
   margin: 0; }
 
-/* line 416, ../components/sass/layout/_layout.scss */
+/* line 405, ../components/sass/layout/_layout.scss */
 .margin-balance {
   margin: 0.1875rem auto 0 auto;
   display: block;
   width: 15%; }
 
-/* line 422, ../components/sass/layout/_layout.scss */
+/* line 411, ../components/sass/layout/_layout.scss */
 .optional {
   /* *optional: */
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #2C8A65;
   letter-spacing: 0.025rem;
   line-height: 1.1875rem;
   display: block;
-  margin-top: 0.5rem; }
+  margin-top: 0.25rem; }
 
-/* line 434, ../components/sass/layout/_layout.scss */
+/* line 423, ../components/sass/layout/_layout.scss */
 .cash-hand {
   /* CASH IN HAND: */
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -868,14 +859,14 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   letter-spacing: 0.025rem;
   line-height: 1.1875rem; }
 
-/* line 446, ../components/sass/layout/_layout.scss */
+/* line 435, ../components/sass/layout/_layout.scss */
 .sep-cash {
   display: block;
   width: 1.25rem;
   border-bottom: 1px solid #575757;
   margin: 1.125rem auto 1.125rem auto; }
 
-/* line 453, ../components/sass/layout/_layout.scss */
+/* line 442, ../components/sass/layout/_layout.scss */
 .float {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -1096,7 +1087,7 @@ input[type=text], input[type=password], input[type=number] {
   padding: 0 0 0.5rem 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   color: #575757;
   letter-spacing: 0.025rem; }
 
@@ -1194,11 +1185,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 .labels {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: #575757;
   letter-spacing: 0.025rem;
   line-height: 1.1875rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.125rem;
   display: block; }
 
 /* line 1, ../components/sass/modules/_buttons.scss */
@@ -1212,14 +1203,14 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 .btn-login {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 2.125rem;
+  font-size: 1.625rem;
   text-transform: capitalize;
   color: #fff;
   background: #30CA00;
   letter-spacing: 0.06563rem;
   line-height: 2.125rem;
   margin: 0 auto 3rem auto;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.25rem;
   display: block;
   overflow: hidden; }
 
@@ -1235,7 +1226,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   letter-spacing: 0.0225rem;
   line-height: 2.125rem;
   margin: 0 auto 3rem auto;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.25rem;
   display: block;
   overflow: hidden;
   text-align: center; }
@@ -1269,7 +1260,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   letter-spacing: 0.0225rem;
   line-height: 1.5rem;
   margin: 0 auto 3rem auto;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 0;
   display: inline-block;
   overflow: hidden;
   width: 40%; }
@@ -1368,18 +1359,34 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   margin-top: 2.25rem; }
 
 /* line 175, ../components/sass/modules/_buttons.scss */
+.offset-top-20 {
+  margin-top: 1.25rem; }
+
+/* line 179, ../components/sass/modules/_buttons.scss */
 .offset-top-130 {
   margin-top: 8.125rem; }
 
-/* line 179, ../components/sass/modules/_buttons.scss */
+/* line 183, ../components/sass/modules/_buttons.scss */
+.offset-top-70 {
+  margin-top: 4.375rem; }
+
+/* line 187, ../components/sass/modules/_buttons.scss */
 .offset-left-10 {
   margin-left: 10%; }
 
-/* line 183, ../components/sass/modules/_buttons.scss */
+/* line 191, ../components/sass/modules/_buttons.scss */
+.offset-right-16 {
+  margin-right: 16px; }
+
+/* line 195, ../components/sass/modules/_buttons.scss */
 .offset-margin-bottom-0 {
   margin: 0; }
 
-/* line 187, ../components/sass/modules/_buttons.scss */
+/* line 199, ../components/sass/modules/_buttons.scss */
+.offset-margin-bottom-20 {
+  margin-bottom: 1.25rem; }
+
+/* line 204, ../components/sass/modules/_buttons.scss */
 .offset-top-app-bar {
   margin-top: 1.125rem; }
 
@@ -1883,3 +1890,9 @@ html {
 /* line 24, ../components/sass/states/_grid-display.scss */
 .is-displayed {
   display: block; }
+
+@media (max-width: 320px) {
+  /* line 2, ../components/sass/_responsive.scss */
+  .grid {
+    width: 80%;
+    padding: 0; } }
