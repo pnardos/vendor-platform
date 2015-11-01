@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="keyline_standard_margin">16dp</dimen>
+
+    <!-- Font Sizes -->
+    <dimen name="base_font_size">16sp</dimen>
+    <dimen name="medium_font_size">18sp</dimen>
+    <dimen name="large_font_size">20sp</dimen>
+    <dimen name="larger_font_size">22sp</dimen>
+    <dimen name="small_font_size">14sp</dimen>
+    <dimen name="smaller_font_size">13sp</dimen>
+    <dimen name="smallest_font_size">12sp</dimen>
+
+    <!-- Spacing -->
+    <dimen name="left_small_padding">9dp</dimen>
+    <dimen name="button_padding">12dp</dimen>
+    <dimen name="minute_margin">4dp</dimen>
+    <dimen name="top_logo_spacing">50dp</dimen>
+    <dimen name="bottom_login_spacing">28dp</dimen>
+
+    <!-- Spacing -->
+    <dimen name="standard_margin">18dp</dimen>
+
+    <!-- Height -->
+    <dimen name="edit_item_pager_height">126dp</dimen>
+    <dimen name="pager_top_padding">30dp</dimen>
+    <dimen name="payment_button_height">100dp</dimen>
+    <dimen name="large_top_spacing">74dp</dimen>
+    <dimen name="divider_height">20dp</dimen>
+
+    <dimen name="circle_radius">12dp</dimen>
+    <dimen name="narrow_space">0.5dp</dimen>
+    <dimen name="marginal_space">1dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="circle_logo_radius">38dp</dimen>
+    <dimen name="active_drawable_radius">10dp</dimen>
+
+</resources>

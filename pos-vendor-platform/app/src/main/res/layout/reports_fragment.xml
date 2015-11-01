@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"
+             android:id="@+id/toolbar"/>
+
+    <com.weiwangcn.betterspinner.library.BetterSpinner
+        android:id="@+id/carrier_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:hint="Choose Carrier" />
+
+    <com.weiwangcn.betterspinner.library.BetterSpinner
+        android:id="@+id/denomination_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carrier_spinner"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:hint="Choose Denomination" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/denomination_spinner"
+        android:layout_marginTop="@dimen/button_padding"
+        android:layout_marginBottom="@dimen/button_padding"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+        <EditText
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_states"
+            android:hint="Phone Number"
+            android:paddingBottom="42dp"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            android:textColor="@color/gray"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/base_font_size"
+            tools:ignore="MissingPrefix"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_number"
+        android:layout_marginBottom="@dimen/bottom_login_spacing"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+        <EditText
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_states"
+            android:hint="Amount"
+            android:paddingBottom="42dp"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            android:textColor="@color/gray"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/base_font_size"
+            tools:ignore="MissingPrefix"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/print_btn"
+        android:layout_alignParentBottom="true"
+        android:text="Print"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:background="@color/primary"/>
+
+</RelativeLayout>

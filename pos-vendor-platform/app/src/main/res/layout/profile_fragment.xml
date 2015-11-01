@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"
+             android:id="@+id/toolbar"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/button_padding"
+        android:layout_marginBottom="@dimen/button_padding"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_states"
+            android:hint="First Name"
+            android:paddingBottom="42dp"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            android:textColor="@color/gray"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/base_font_size"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_name"
+        android:layout_marginBottom="@dimen/bottom_login_spacing"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_states"
+            android:hint="Last Name"
+            android:paddingBottom="42dp"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            android:textColor="@color/gray"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/base_font_size"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/last_name"
+        android:id="@+id/cash_hand"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:textAllCaps="true"
+        android:text="Cash in Hand"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cash_hand"
+        android:layout_marginTop="@dimen/bottom_login_spacing"
+        android:id="@+id/total_amount"
+        android:textSize="30sp"
+        android:textColor="@color/primary_dark"
+        android:textAllCaps="true"
+        android:text="Kes 42,500"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_profile_btn"
+        android:layout_alignParentBottom="true"
+        android:text="Edit Profile"
+        android:textColor="@color/accent"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/keyline_standard_margin"
+        android:layout_marginRight="@dimen/keyline_standard_margin"
+        android:layout_marginBottom="@dimen/keyline_standard_margin"
+        android:background="@drawable/rectangle_save"/>
+
+</RelativeLayout>
